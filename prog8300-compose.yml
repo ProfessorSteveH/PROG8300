@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  owncloud:
+    image: stevehendrikse/prog8300owncloud:1.0
+    ports:
+      - 80:80
+    expose:
+      - 80
+    environment:
+      EXTERNAL_IP: ${EXT_IP}
+      EXTRA_IP: 172.16.10.132
+    volumes:
+      - '${HOME}/prog8300:/mnt/data/files:cached'
+  
+  jupyter:
+    image: stevehendrikse/prog8300jupyter:1.0
+    ports:
+      - 8000:8000
+    expose:
+      - 8000
+    links:
+      - owncloud
+    environment:
+      OC_IP: owncloud
+      OC_USER: "admin"
+      OC_PASS: "p@ssw0rd"
+
+  codeserver:
+    image: stevehendrikse/prog8300codeserver:1.0
+    ports:
+      - 8001:8001
+    expose:
+      - 8001
+    links:
+      - owncloud
+    environment:
+      OC_IP: owncloud
+      OC_USER: "admin"
+      OC_PASS: "p@ssw0rd"
+
+
