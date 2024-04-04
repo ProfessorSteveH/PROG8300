@@ -1,5 +1,11 @@
 # PROG8300
 
+Update: 2024-04-04
+- new versions of everything
+- some new tools installed into Jupyter container
+- change to naming conventions
+- as always, please email Professor Steve if you are having issues.
+
 Update: 2023-08-25
 - New versions of everything.
 - If you have trouble with these images, your can revert back to the :1.1 versions (see docker-compose.yml file). Also email Professor Steve.
