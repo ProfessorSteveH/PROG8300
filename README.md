@@ -1,5 +1,8 @@
 # PROG8300
 
+Minor update: 2024-04-06
+- jupyter container getts 32 bit compiler libraries
+
 Update: 2024-04-04
 - new versions of everything
 - some new tools installed into Jupyter container

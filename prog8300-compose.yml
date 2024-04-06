@@ -14,7 +14,7 @@ services:
       - '${HOME}/prog8300:/mnt/data/files:cached'
   
   jupyter:
-    image: stevehendrikse/malwarelabjupyter:3.0
+    image: stevehendrikse/malwarelabjupyter:3.1
     ports:
       - 8000:8000
     expose:
