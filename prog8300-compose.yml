@@ -11,7 +11,7 @@ services:
       EXTERNAL_IP: ${EXT_IP}
       EXTRA_IP: 172.16.10.132
     volumes:
-      - '${DATADIR}:/mnt/data/files:cached'
+      - '${DATADIR:-./prog8300}:/mnt/data/files:cached'
   
   jupyter:
     image: stevehendrikse/malwarelabjupyter:3.1
