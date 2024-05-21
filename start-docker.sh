@@ -1,6 +1,9 @@
 #!/bin/bash -ex
 #
 
+which docker-compose > /dev/null || \
+    { echo "docker-compose not found in PATH"; exit 1; }
+
 datadir="${1:-$HOME}/prog8300"
 
 if [ -d "$datadir" ] 
