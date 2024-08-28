@@ -1,7 +1,15 @@
 # PROG8300
 
+Update: 2024-08-28
+- new versions of everything
+- with recent advancements of text editor capabilities, code-server has been removed from this setup
+- Jupyter Project has experienced a significant change in their architecture, as such so has this config
+- there is no need to have multiple python kernels anymore
+- some seldom used tools have been removed 
+- there may be issues with this version (as we started from scratch for this one).  If you experience issues please email Professor Steve
+
 Minor update: 2024-04-06
-- jupyter container getts 32 bit compiler libraries
+- jupyter container gets 32 bit compiler libraries
 
 Update: 2024-04-04
 - new versions of everything

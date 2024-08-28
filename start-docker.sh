@@ -1,11 +1,11 @@
 #!/bin/bash
 #
 
-if [ -d "$HOME/prog8300" ] 
+if [ -d "$HOME/malwarelab" ] 
 then
-    echo "Directory $HOME/prog8300 exists. continuing." 
+    echo "Directory $HOME/malwarelab exists. continuing." 
 else
-    mkdir $HOME/prog8300 
+    mkdir $HOME/malwarelab 
 fi
 
 ip route get 8.8.8.8 > /dev/null 2>&1
@@ -18,4 +18,4 @@ else
 	export EXT_IP=$(ip route | grep eth0 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')
 fi
 
-docker-compose -f prog8300-compose.yml up -d
+docker-compose -f malwarelab-compose.yml up -d
