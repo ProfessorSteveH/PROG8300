@@ -1,5 +1,8 @@
 # PROG8300
 
+** <ins>Update: 2025-08-05</ins>**
+- ** This repo has been superceded by the tools/configuration found at https://github.com/ProfessorSteveH/SECU74000 **
+
 Update: 2024-08-28
 - new versions of everything
 - with recent advancements of text editor capabilities, code-server has been removed from this setup
